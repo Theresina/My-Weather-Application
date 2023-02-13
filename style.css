@@ -12,7 +12,7 @@ h1 {
   margin: 50px;
   margin-top: 10px;
   font-family: Century Gothic;
-  font-color: gray;
+  font-color: white;
 }
 .h1:hover {
   color: white;
@@ -45,10 +45,14 @@ footer {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 90px;
   padding: 60px;
+  height: 400px;
+  width: 900px;
 
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-color: white;
+  background-color: rgba(219, 216, 216, 0.5);
 }
 .enter-city {
   background: #f9f7fe;
