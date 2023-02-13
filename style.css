@@ -20,10 +20,13 @@ h1 {
   color: white;
 }
 h2 {
-  display: inline;
-  margin: 50px;
-  margin-top: 1px;
+  display: inline-block;
+  text-align: right;
+  margin-left: 6px;
+  margin-top: none;
+  margin-bottom: 5px;
   font-size: 19px;
+  padding: none;
 }
 button {
   border: none;
@@ -58,6 +61,12 @@ form {
   border-color: white;
   background-color: rgba(219, 216, 216, 0.5);
 }
+.date {
+  text-align: right;
+  position: absolute;
+  margin-bottom: 20px;
+  right: 150px;
+}
 .enter-city {
   background: #f9f7fe;
   border: none;
@@ -70,7 +79,9 @@ form {
   padding: 7px 20px;
   margin: 5px;
 }
-
+.theCity {
+  margin-left: 10px;
+}
 .row {
   text-align: center;
 }
