@@ -72,7 +72,7 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#city-Enter");
 searchForm.addEventListener("submit", handleSubmit);
 
-let currentLocationButton = document.querySelector("#currentPlace");
+let currentLocationButton = document.querySelector("#currently");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
