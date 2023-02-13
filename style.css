@@ -1,3 +1,8 @@
+body {
+  background-image: url("https://64.media.tumblr.com/eb545ba5a7e0c42a8983757341a6b559/0c3e9c08e1feff56-22/s500x750/29f826d886aabf1c1a14102a4323ecee6ef9d795.gifv");
+  background-repeat: repeat;
+}
+
 header {
   text-align: center;
   color: gray;
@@ -41,20 +46,20 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px;
-  background: linear-gradient(
-    93.1deg,
-    rgb(238, 254, 183) 19.1%,
-    rgb(169, 254, 222) 53.9%,
-    rgb(90, 222, 255) 92%
-  );
+
   border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .enter-city {
-  margin: 50px;
-  margin-bottom: 10px;
-  width: 400px;
+  background: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  display: inline-block;
+  font-size: 16px;
   height: 50px;
-  border-radius: 17px;
+  line-height: 150px;
+  padding: 15px 20px;
 }
 .currentPlace {
   display: inline;
