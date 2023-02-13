@@ -10,9 +10,11 @@ header {
   margin-bottom: 5px;
 }
 h1 {
-  margin: 50px;
+  margin: 0px;
+  padding: 0;
   margin-left: 0;
   margin-top: 10px;
+  margin-bottom: 0px;
   font-family: Century Gothic;
   color: white;
   font-size: 38px;
@@ -104,12 +106,12 @@ form {
   font-size: 20px;
   display: inline;
 }
-.sun {
-  font-size: 50px;
-}
-.degree-week {
-  font-size: 15px;
-}
 .alldegrees {
   position: absolute;
+}
+.humidityandwind {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
 }
