@@ -11,9 +11,12 @@ header {
 }
 h1 {
   margin: 50px;
+  margin-left: 0;
   margin-top: 10px;
   font-family: Century Gothic;
-  font-color: white;
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .h1:hover {
@@ -49,6 +52,10 @@ footer {
 form {
   display: inline-block;
 }
+.kanji {
+  font-size: 50px;
+  color: white;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -80,7 +87,7 @@ form {
   margin: 5px;
 }
 .theCity {
-  margin-left: 10px;
+  margin-left: 0;
 }
 .row {
   text-align: center;
@@ -102,4 +109,7 @@ form {
 }
 .degree-week {
   font-size: 15px;
+}
+.alldegrees {
+  position: absolute;
 }

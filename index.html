@@ -36,8 +36,9 @@
   </head>
   <body>
     <header>SheCodes Weather App</header>
+    <div class="kanji" style="text-align: center"> 地  &nbsp; &nbsp; &nbsp; &nbsp;  水  &nbsp; &nbsp; &nbsp; &nbsp;  火&nbsp; &nbsp; &nbsp; &nbsp; 風 &nbsp; &nbsp; &nbsp; &nbsp;空</div>
     <div class="container">
-      <h2> <img src="https://media0.giphy.com/media/h4NhtIH2IoxYFl8Cjz/giphy.gif?cid=ecf05e47u0rk9rndajgsal7lpb70yyoq0flukaft2gzeqdp3&rid=giphy.gif&ct=s" width="80px"><span id="date">       Wednesday</span></h2><br />
+      <h2> <img src="https://media0.giphy.com/media/h4NhtIH2IoxYFl8Cjz/giphy.gif?cid=ecf05e47u0rk9rndajgsal7lpb70yyoq0flukaft2gzeqdp3&rid=giphy.gif&ct=s" width="80px"><span id="date">Wednesday</span></h2><br />
       <form id="city-Enter">
         <input
           type="text"
@@ -47,15 +48,15 @@
           placeholder="Enter your city"
           class="enter-city"
         />
-        <input type="submit" value="Search" id="search-button"/>
+        <input type="submit" value="Search" id="search-button"style="border-radius: 13px; border: none; padding: 5px"/>
       </form>
-      <button id="currently"> Current Location </button>
+      <button type="button" class="btn btn-outline-light" id="currently">Current Location</button>
       <br />
       <br />
       <h1> <span id="theCity">
         New York</span>
         <div class="fheit">
-          <span class="degreesnow" id="theDegrees">3</span> <a href="#" id="theCelsius" style="color: white; text-decoration: none">°C</a> | <a href="#" id="theFahrenheit" style="text-decoration: none; color: white"> °F</a> <br />
+          <span class="alldegrees"><span class="degreesnow" id="theDegrees">3 </span> <a href="#" id="theCelsius" style="color: royalblue; text-decoration: none">°C</a> | <a href="#" id="theFahrenheit" style="text-decoration: none; color: royalblue"> °F</a></span><br />
         </div>
         <br />
       </h1>
