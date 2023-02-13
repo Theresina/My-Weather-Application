@@ -35,8 +35,9 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>SheCodes Weather App</header>
     <div class="container">
-      <header>SheCodes Weather App</header>
+      
       <form id="city-Enter">
         <input
           type="text"
@@ -48,14 +49,13 @@
         />
         <input type="submit" value="Search" id="search-button"/>
       </form>
-      <button id="currentPlace"> Current Position </button>
+      <button class="currently"> Current Location </button>
       <br />
       <br />
       <h1> <span id="theCity">
-        Munich</span>
-        <i class="fa-solid fa-cloud-sun weather-munich"></i>
+        New York</span>
         <div class="fheit">
-          <span class="degreesnow" id="theDegrees">3°</span> <a href="#" id="theCelsius">C</a> | <a href="#" id="theFahrenheit"> F</a> <br />
+          <span class="degreesnow" id="theDegrees">3</span> <a href="#" id="theCelsius" style="color: white; text-decoration: none">°C</a> | <a href="#" id="theFahrenheit" style="text-decoration: none; color: white"> °F</a> <br />
         </div>
         <br />
       </h1>
@@ -63,93 +63,6 @@
       <br />
       <br />
       <br />
-      <div class="row">
-        <div class="col"><button id="suns"> Sun
-          <div class="sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100px"
-              height="50"
-              fill="currentColor"
-              class="bi bi-brightness-low"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"
-
-                />
-            </div> <br />
-            <div class="degree-week">6°C</div>
-            
-             </button>
-            </div>
-        <div class="col"><button id="suns"> Mon
-          <div class="sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100px"
-              height="50"
-              fill="currentColor"
-              class="bi bi-brightness-low"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"
-              />
-            </div> <br /><div class="degree-week">
-            7°C</div>
-             </button>
-            </div>
-        <div class="col"><button id="suns"> Tue
-          <div class="sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100px"
-              height="50"
-              fill="currentColor"
-              class="bi bi-brightness-low"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"
-              />
-            </div> <br /><div class="degree-week">
-            8°C</div>
-             </button>
-            </div>
-        <div class="col"><button id="suns"> Wed
-          <div class="sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100px"
-              height="50"
-              fill="currentColor"
-              class="bi bi-brightness-low"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"
-              />
-            </div> <br /><div class="degree-week">
-            7°C</div>
-             </button>
-            </div>
-        <div class="col"><button id="suns"> Thu
-          <div class="sun">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="100px"
-              height="50"
-              fill="currentColor"
-              class="bi bi-brightness-low"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"
-              />
-            </div> <br /><div class="degree-week">
-            9°C</div>
-             </button>
             </div>
       </div>
       
@@ -157,7 +70,7 @@
       <br />
       <br />
       <footer>
-        <a href="https://github.com/Theresina/My-Weather-Application">Open-source code</a> by Theresina
+        <a href="https://github.com/Theresina/My-Weather-Application" style="text-decoration: none">Open-source code</a> by Theresina
       </footer>
     </div>
   </body>

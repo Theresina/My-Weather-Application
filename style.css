@@ -7,6 +7,7 @@ header {
   text-align: center;
   color: gray;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 5px;
 }
 h1 {
   margin: 50px;
@@ -14,6 +15,7 @@ h1 {
   font-family: Century Gothic;
   font-color: white;
 }
+
 .h1:hover {
   color: white;
 }
@@ -23,31 +25,33 @@ h2 {
   margin-top: 1px;
   font-size: 19px;
 }
-
-.button {
-  display: inline;
-  width: 150px;
-  border-radius: 20px;
-  border-color: white;
-  font-size: 23px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  overflow: hidden;
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 7px;
+  margin-left: 300px;
 }
 button:hover {
-  color: white;
+  color: rgb(58, 47, 154);
 }
+
 footer {
   text-align: center;
   color: gray;
   font-family: "Raleway", sans-serif;
+  margin-top: 0;
+  padding: 0;
+}
+form {
+  display: inline-block;
 }
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 90px;
-  padding: 60px;
-  height: 400px;
+  margin-bottom: 0;
+  padding: 65px;
+  height: 520px;
   width: 900px;
 
   border-radius: 15px;
@@ -63,22 +67,10 @@ footer {
   font-size: 16px;
   height: 50px;
   line-height: 150px;
-  padding: 15px 20px;
+  padding: 7px 20px;
+  margin: 5px;
 }
-.currentPlace {
-  display: inline;
-  margin: 50px;
-  margin-bottom: 10px;
-  width: 400px;
-  height: 50px;
-  border-radius: 17px;
-}
-.weather-munich {
-  right: 220px;
-  position: absolute;
-  font-size: 70px;
-  display: inline;
-}
+
 .row {
   text-align: center;
 }
@@ -87,14 +79,16 @@ footer {
 }
 .degreesnow {
   font-size: 26px;
+  margin-left: 370px;
 }
 .fheit {
   right: 150px;
-  position: absolute;
   font-size: 20px;
   display: inline;
 }
-
+.theCelsius:hover {
+  color: rgb(58, 47, 154);
+}
 .sun {
   font-size: 50px;
 }
