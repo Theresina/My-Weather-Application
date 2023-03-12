@@ -73,6 +73,28 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 //celsius and fahrenheit
 
+function fahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+  theDegrees.innerHTML = Math.round(fahrenheitTemp);
+
+  theCelsius.classList.remove("active");
+  theFahrenheit.classList.add("active");
+}
+
+let fahrenheitLink = document.querySelector("#theFahrenheit");
+fahrenheitLink.addEventListener("click", fahrenheitTemperature);
+
+function celsiusTemperature(event) {
+  event.preventDefault();
+  theDegrees.innerHTML = Math.round(celsiusTemp);
+  theFahrenheit.classList.remove("active");
+  theCelsius.classList.add("active");
+}
+
+let celsiusLink = document.querySelector("#theCelsius");
+celsiusLink.addEventListener("click", celsiusTemperature);
+
 //other
 
 searchCity("New York");
