@@ -70,21 +70,8 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#currently");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
 //celsius and fahrenheit
-
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#theDegrees");
-  temperatureElement.innerHTML = 66;
-  let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#theDegrees");
-  temperatureElement.innerHTML = 19;
-}
 
 //other
 
