@@ -36,9 +36,18 @@
   </head>
   <body>
     <header>SheCodes Weather App</header>
-    <div class="kanji" style="text-align: center"> 地  &nbsp; &nbsp; &nbsp; &nbsp;  水  &nbsp; &nbsp; &nbsp; &nbsp;  火&nbsp; &nbsp; &nbsp; &nbsp; 風 &nbsp; &nbsp; &nbsp; &nbsp;空</div>
+    <div class="kanji" style="text-align: center">
+      地 &nbsp; &nbsp; &nbsp; &nbsp; 水 &nbsp; &nbsp; &nbsp; &nbsp; 火&nbsp;
+      &nbsp; &nbsp; &nbsp; 風 &nbsp; &nbsp; &nbsp; &nbsp;空
+    </div>
     <div class="container">
-      <h2> <img src="https://media0.giphy.com/media/h4NhtIH2IoxYFl8Cjz/giphy.gif?cid=ecf05e47u0rk9rndajgsal7lpb70yyoq0flukaft2gzeqdp3&rid=giphy.gif&ct=s" width="80px"><span id="date">Wednesday</span></h2><br />
+      <h2>
+        <img
+          src="https://media0.giphy.com/media/h4NhtIH2IoxYFl8Cjz/giphy.gif?cid=ecf05e47u0rk9rndajgsal7lpb70yyoq0flukaft2gzeqdp3&rid=giphy.gif&ct=s"
+          width="80px"
+        /><span id="date">Wednesday</span>
+      </h2>
+      <br />
       <form id="city-Enter">
         <input
           type="text"
@@ -48,32 +57,70 @@
           placeholder="Enter your city"
           class="enter-city"
         />
-        <input type="submit" value="Search" id="search-button"style="border-radius: 13px; border: none; padding: 5px"/>
+        <input
+          type="submit"
+          value="Search"
+          id="search-button"
+          style="border-radius: 13px; border: none; padding: 5px"
+        />
       </form>
-      <button type="button" class="btn btn-outline-light" id="currently">Current Location</button>
+      <button type="button" class="btn btn-outline-light" id="currently">
+        Current Location
+      </button>
       <br />
       <br />
-      <h1> <span id="theCity">
-        New York</span>
+      <h1>
+        <span id="theCity"> New York</span>
         <div class="fheit">
-          <span class="alldegrees"><span class="degreesnow" id="theDegrees">3 </span> <a href="#" id="theCelsius" style="color: royalblue; text-decoration: none">°C</a> | <a href="#" id="theFahrenheit" style="text-decoration: none; color: royalblue"> °F</a></span><br />
+          <span class="alldegrees"
+            ><span class="degreesnow" id="theDegrees">3 </span>
+            <a
+              href="#"
+              id="theCelsius"
+              style="color: royalblue; text-decoration: none"
+              >°C</a
+            >
+            |
+            <a
+              href="#"
+              id="theFahrenheit"
+              style="text-decoration: none; color: royalblue"
+            >
+              °F</a
+            ></span
+          ><br />
         </div>
         <br />
       </h1>
-      <div class="humiditywindandnumbers"> <strong class="humidityandwind" id="humidity"> Humidity: </strong><div id="humidityamount" style="display:inline-block"> </div>% <strong class="humidityandwind"> Wind:</strong><div id="windnumber" style="display:inline-block"> </div> km/h </div>
-      <br />
-      <div class="description">It is currently <div id="citydescription" style="display:inline-block"> </div> in...</div>
-      <br />
-      <br />
-      <br />
-            </div>
+      <div class="humiditywindandnumbers">
+        <strong class="humidityandwind" id="humidity"> Humidity: </strong>
+        <div id="humidityamount" style="display: inline-block"></div>
+        % <strong class="humidityandwind"> Wind:</strong>
+        <div id="windnumber" style="display: inline-block"></div>
+        km/h
       </div>
-      
+      <br />
+      <div class="description">
+        It is currently
+        <div id="citydescription" style="display: inline-block"></div><div style="display: inline-block">.</div></div>
+          <br />
+          <br />
+          <div id="weatherforecast"> <div id="tomorrow" style="display: inline-block">Tomorrow  </div><div id="übermorgen" style="display: inline-block">  Tomorrow2  </div><div id="tomorrow3" style="display: inline-block">  Tomorrow3  </div><div id="tomorrow4" style="display: inline-block">  Tomorrow4</div></div>
+          <br />
+          <br />
+        </div>
+      </div>
+
       <script src="script.js"></script>
       <br />
       <br />
       <footer>
-        <a href="https://github.com/Theresina/My-Weather-Application" style="text-decoration: none">Open-source code</a> by Theresina
+        <a
+          href="https://github.com/Theresina/My-Weather-Application"
+          style="text-decoration: none"
+          >Open-source code</a
+        >
+        by Theresina
       </footer>
     </div>
   </body>

@@ -22,12 +22,19 @@ function formatDate(date) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
+
 //search engine
+
 function displayWeatherCondition(response) {
   document.querySelector("#theCity").innerHTML = response.data.name;
   document.querySelector("#theDegrees").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#citydescription").innerHTML =
+    response.data.weather.description;
+  document.querySelector("#humidityamount").innerHTML =
+    response.data.main.humidity;
+  document.querySelector("#windnumber").innerHTML = response.data.wind.speed;
 }
 
 function searchCity(city) {
@@ -43,7 +50,7 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = `2bb9dab46b9ec3d65f423c63f27a9b8`;
+  let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
@@ -57,6 +64,8 @@ function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#theDegrees");
   temperatureElement.innerHTML = 66;
+  let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 }
 
 function convertToCelsius(event) {
@@ -69,10 +78,10 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-let searchForm = document.querySelector("#city-Enter");
-searchForm.addEventListener("submit", handleSubmit);
-
 let currentLocationButton = document.querySelector("#currently");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=${apiKey}&units=metric`;
+console.log(apiUrl);
