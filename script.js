@@ -22,7 +22,14 @@ function formatDate(date) {
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
 }
+
+let dateElement = document.querySelector("#date");
+let currentTime = new Date();
+dateElement.innerHTML = formatDate(currentTime);
+
 //search engine
+
+let city = document.querySelector("#city-input").value;
 
 function displayWeatherCondition(response) {
   document.querySelector("#theCity").innerHTML = response.data.name;
@@ -30,7 +37,7 @@ function displayWeatherCondition(response) {
     response.data.main.temp
   );
   document.querySelector("#citydescription").innerHTML =
-    response.data.weather.description;
+    response.data.weather[0].description;
   document.querySelector("#humidityamount").innerHTML =
     response.data.main.humidity;
   document.querySelector("#windnumber").innerHTML = response.data.wind.speed;
@@ -48,9 +55,11 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+//current location
+
 function searchLocation(position) {
   let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
@@ -58,6 +67,10 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+let currentLocationButton = document.querySelector("#currently");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+//celsius and fahrenheit
 
 function convertToFahrenheit(event) {
   event.preventDefault();
@@ -73,14 +86,6 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 19;
 }
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
-
-let currentLocationButton = document.querySelector("#currently");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+//other
 
 searchCity("New York");
-let apiKey = `72bb9dab46b9ec3d65f423c63f27a9b8`;
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
